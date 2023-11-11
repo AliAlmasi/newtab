@@ -4,8 +4,8 @@
 
 ### 1. Download
 
-- Download the index file from this repository and save it to your computer.
-- Once you have downloaded the file, move the `index.html` file to the folder where you want to store it
+- Download the `index.html` file from this repository (or from the releases page) and save it to your computer.
+- Once you have downloaded the file, move the `index.html` file to the folder where you want to store it.
 
 ### 2. Download and install new tab extention
 
