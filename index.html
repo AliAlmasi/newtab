@@ -66,11 +66,10 @@
 			outline: none;
 			outline-offset: 0;
 			box-shadow: none;
-			caret-color: var(--secondary-color);
-			caret-shape: block;
+			caret: var(--secondary-color) block;
 			color: var(--primary-color);
 			height: 2ch;
-			font-size: 20px;
+			font-size: inherit;
 			line-height: 1.10;
 			font-family: "Jetbrains Mono", "Vazirmatn", monospace;
 		}
@@ -98,7 +97,11 @@
 			color: var(--secondary-color);
 			font-weight: 400;
 		}
-
+		
+		a:hover::before {
+			color: var(--primary-color);
+		}
+		
 		ul {
 			list-style-type: none;
 			margin: 0;
@@ -176,6 +179,38 @@
 		.action-buttons .min {
 			background-color: var(--fifth-color);
 		}
+
+		/* ----- MEDIA QUERIES ----- */
+
+		@media (max-width: 71.375em) {
+			html {
+				font-size: 16px;
+			}
+		}
+
+		@media (max-width: 59.75em) {
+			input {
+				width: 70%;
+			}
+		}
+
+		@media (max-width: 55.625em) {
+			html {
+				font-size: 14px;
+			}
+		}
+
+		@media (max-width: 49em) {
+			body {
+				padding: 1em;
+			}
+		}
+
+		@media (max-width: 44.375em) {
+			html {
+				font-size: 12px;
+			}
+		}
 	</style>
 	<head>
 		<title>ali&commat;XD &dollar; newtab</title>
@@ -184,6 +219,7 @@
 			function setFocusToTextBox() {
 				document.getElementById("input").focus();
 			}
+			document.onload(setFocusToTextBox());
 		</script>
 	</head>
 
